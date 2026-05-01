@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Super Bikes Gallery</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+background: linear-gradient(to right, #141e30, #243b55);
+color:white;
+}
+
+/* Header */
+
+header{
+text-align:center;
+padding:20px;
+background: linear-gradient(to right, #ff512f, #dd2476);
+}
+
+header h1{
+font-size:35px;
+}
+
+/* Gallery */
+
+.gallery{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:20px;
+padding:20px;
+}
+
+/* Image Box */
+
+.image-box{
+position:relative;
+overflow:hidden;
+border-radius:10px;
+box-shadow:0 4px 12px rgba(89, 16, 145, 0);
+transition:0.4s;
+}
+
+.image-box img{
+width:300px;
+height:200px;
+display:block;
+transition:0.5s;
+}
+
+/* Hover Effect */
+
+.image-box:hover img{
+transform:scale(1.1);
+}
+
+/* Overlay */
+
+.overlay{
+position:absolute;
+bottom:0;
+width:100%;
+padding:10px;
+text-align:center;
+background:linear-gradient(transparent, black);
+opacity:0;
+transition:0.5s;
+font-weight:bold;
+}
+
+.image-box:hover .overlay{
+opacity:1;
+}
+
+/* Footer */
+
+footer{
+text-align:center;
+padding:15px;
+background:linear-gradient(to right,#ff512f,#dd2476);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Celebrities Gallery</h1>
+</header>
+
+<div class="gallery">
+
+<div class="image-box">
+<img src="https://knowlepedia.org/images/0/0e/Salman_Khan.jpg">
+<div class="overlay">Salman khan</div>
+</div>
+
+<div class="image-box">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvwiivsmRqLGPrl-l3VVoxT9yc1dCCk3uoLQ&s">
+<div class="overlay">Shahrukh khan</div>
+</div>
+
+<div class="image-box">
+<img src="https://cdn.britannica.com/25/162425-050-B767198B/Aamir-Khan.jpg">
+<div class="overlay">Aamir Khan</div>
+</div>
+
+<div class="image-box">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4aKQqBBKCnD7KDC7vodrdnJsAhVYQREzDgw&s">
+<div class="overlay">hrithik roshan</div>
+</div>
+
+<div class="image-box">
+<img src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/ranveer_singh_19858_26-07-2016_04-59-37.jpg">
+<div class="overlay">ranveer singh</div>
+</div>
+
+<div class="image-box">
+<img src="https://www.bollywoodhungama.com/wp-content/uploads/2025/01/Ranbir_Kapoor_to_Start_Dhoom_4_In_2026.jpg">
+<div class="overlay">ranbir kapoor</div>
+</div>
+
+</div>
+
+<footer>
+<p>Super Bikes Image Gallery | Web Design Practical</p>
+</footer>
+
+</body>
+</html>
+</body>
+</html>
