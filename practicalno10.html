@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iFrame Webpage</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: linear-gradient(to right, #a4aaab, #0072ff);
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            padding: 15px;
+        }
+
+        .container {
+            display: flex;
+            height: 500px;
+        }
+
+        /* Menu Styling */
+        .menu {
+            width: 30%;
+            background: rgba(0,0,0,0.7);
+            padding: 20px;
+        }
+
+        .menu a {
+            display: block;
+            text-decoration: none;
+            background: #515151;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 8px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .menu a:hover {
+            background: #77913a;
+            transform: scale(1.05);
+        }
+
+        /* Content Area */
+        .content {
+            width: 70%;
+            background: rgb(189, 178, 178);
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Iframe Webpage</h1>
+<h3>Sameer Mahajan</h3>
+<h4>CS25170</h4>
+
+<div class="container">
+
+    <!-- Navigation Menu -->
+    <div class="menu">
+
+        <a href="https://www.wikipedia.org" target="frame">Open Wikipedia</a>
+
+        <a href="https://www.example.com" target="frame">Open Example Site</a>
+        
+
+
+
+    </div>
+
+    <!-- Iframe Display Area -->
+    <div class="content">
+        <iframe id="frame" name="frame" srcdoc="
+    <h1 style='text-align:center;color:blue;'>Welcome 👋</h1>
+    <p style='text-align:center;'>Click any option from the left menu.</p>
+"></iframe>
+    </div>
+
+</div>
+
+</body>
+</html>
